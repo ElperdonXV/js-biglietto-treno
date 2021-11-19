@@ -20,3 +20,4 @@ if (userAge > 65) {
     console.log('Il prezzo scontato è di ' + ticket + '€');
 }
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
+document.getElementById('ticket').innerHTML = ticket;
