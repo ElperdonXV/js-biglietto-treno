@@ -9,13 +9,15 @@ let ticket = parseFloat(userKm * tariffa);
 console.log('La tariffa è di ' + ticket);
 // va applicato uno sconto del 20 % per i minorenni
 if (userAge < 18 ) {
-    ticket = parseFloat((ticket * 20) / 100);
+    let ticketSale = parseFloat((ticket * 20) / 100);
+    ticket = ticket - ticketSale;
     ticket = ticket.toFixed(2);
     console.log('Il prezzo scontato è di ' + ticket + '€');
 }
 // va applicato uno sconto del 40 % per gli over 65.
 if (userAge > 65) {
-    ticket = ((ticket * 40) / 100);
+    let ticketSale = ((ticket * 40) / 100);
+    ticket = ticket - ticketSale;
     ticket= ticket.toFixed(2);
     console.log('Il prezzo scontato è di ' + ticket + '€');
 }
